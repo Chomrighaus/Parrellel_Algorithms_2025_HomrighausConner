@@ -1,4 +1,4 @@
-// Name:
+// Name: Conner Homrighaus
 // nvcc HW1.cu -o temp
 /*
  What to do:
