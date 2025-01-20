@@ -16,7 +16,7 @@ git pull in order to merge this update with the cloned repository on my machine!
 // sys/time allows us to grab various time based functions! 
 // tv_sec: Seconds since the Epoch (January 1, 1970).
 #include <stdio.h>
-# Standard Header!
+// Standard Header!
 
 
 
