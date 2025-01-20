@@ -3,21 +3,37 @@
 /*
  What to do:
  1. Understand every line of code and be able to explain it in class.
+I understand that this code is a vector adder that adds via array addition. I played with the pointers a bit in my 
+visual studio, but I did not commit those changes in order to perserve the original code!
+I did make a few of my own comments on things that I went through and double checked I understood! For example, what tv_sec did!
  2. Compile, run, and play around with the code.
+I did play around with the code, just on the local machine. However, I am going to go ahead and run the command
+git pull in order to merge this update with the cloned repository on my machine!
 */
 
 // Include files
 #include <sys/time.h>
+// sys/time allows us to grab various time based functions! 
+// tv_sec: Seconds since the Epoch (January 1, 1970).
 #include <stdio.h>
+# Standard Header!
+
+
 
 // Defines
 #define N 1000 // Length of the vector
 
 // Global variables
+// Float *A_CPU, *B_CPU, and *C_CPU are pointers! They are currently not pointing to anything
+// at this moment in the code!
 float *A_CPU, *B_CPU, *C_CPU; 
+//This tolerance is important because of the way float values are stored! Without this tollerance we 
+// would be unable to check if the math was done correctly later in the code!
 float Tolerance = 0.00000001;
 
 // Function prototypes
+// These function prototypes are used so that when the functions are called we don't
+// get errors! 
 void allocateMemory();
 void innitialize();
 void addVectorsCPU(float*, float*, float*, int);
@@ -28,7 +44,9 @@ void cleanUp();
 //Allocating the memory we will be using.
 void allocateMemory()
 {	
-	// Host "CPU" memory.				
+	// Host "CPU" memory.	
+	// Malloc allows for dynamic memory allocation and is very important when we are
+	// unsure of how many variables we need to store within a pointer!
 	A_CPU = (float*)malloc(N*sizeof(float));
 	B_CPU = (float*)malloc(N*sizeof(float));
 	C_CPU = (float*)malloc(N*sizeof(float));
@@ -49,6 +67,7 @@ void addVectorsCPU(float *a, float *b, float *c, int n)
 {
 	for(int id = 0; id < n; id++)
 	{ 
+		// Vector addition through the use of arrays! 
 		c[id] = a[id] + b[id];
 	}
 }
