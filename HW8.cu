@@ -1,6 +1,6 @@
-// Name:
+// Name: Conner Homrighaus
 // Vector Dot product on 1 block 
-// nvcc HW8.cu -o temp
+// nvcc HW8.cu -o run
 /*
  What to do:
  This code uses the CPU to compute the dot product of two vectors of length N. 
