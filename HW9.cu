@@ -1,4 +1,4 @@
-// Name:
+// Name: Conner Homrighuas 
 // Vector Dot product on many block 
 // nvcc HW9.cu -o temp
 /*
