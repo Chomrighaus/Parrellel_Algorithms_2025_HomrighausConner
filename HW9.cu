@@ -228,11 +228,11 @@ int main()
     cudaMemcpyAsync(B_GPU, B_CPU, N * sizeof(float), cudaMemcpyHostToDevice);
     cudaErrorCheck(__FILE__, __LINE__);
     
-    dotProductGPU<<<GridSize, BlockSize>>>(A_GPU, B_GPU, C_GPU, N);
+    dotProductGPU<<<GridSize, BlockSize, 200*sizeof(float)>>>(A_GPU, B_GPU, C_GPU, N);
     cudaErrorCheck(__FILE__, __LINE__);
 
     // Copy Memory from GPU to CPU    
-    cudaMemcpyAsync(C_CPU, C_GPU, GridSize.x * sizeof(float), cudaMemcpyDeviceToHost);
+    cudaMemcpyAsync(C_CPU, C_GPU, N * sizeof(float), cudaMemcpyDeviceToHost);
     cudaErrorCheck(__FILE__, __LINE__);
 
 	// Making sure the GPU and CPU wait until each other are at the same place.
