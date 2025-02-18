@@ -1,5 +1,5 @@
 // Name: Conner Homrighaus
-// nvcc hw6.cu -o temp -lglut -lGL
+// nvcc HW6.cu -o temp -lglut -lGL
 // glut and GL are openGL libraries.
 /*
  What to do:
