@@ -36,7 +36,8 @@
 #define NUMBER_OF_SPHERES 10
 
 // Globals
-typedef struct {
+typedef struct 
+{
     float px, py, pz, vx, vy, vz, fx, fy, fz, mass;
     float r, g, b;  // Color components
 } Sphere;
@@ -68,9 +69,9 @@ void set_initial_conditions()
 		spheres[i].vy = 2.0 * MAX_VELOCITY * ((float)rand()/RAND_MAX - 0.5);
 		spheres[i].vz = 2.0 * MAX_VELOCITY * ((float)rand()/RAND_MAX - 0.5);
 		spheres[i].mass = 1.0;
-        spheres[i].r = (float)rand() / RAND_MAX;
-        spheres[i].g = (float)rand() / RAND_MAX;
-        spheres[i].b = (float)rand() / RAND_MAX;
+        	spheres[i].r = (float)rand() / RAND_MAX;
+        	spheres[i].g = (float)rand() / RAND_MAX;
+        	spheres[i].b = (float)rand() / RAND_MAX;
 	}
 }
 
