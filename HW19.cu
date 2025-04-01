@@ -1,4 +1,4 @@
-// Name: 
+// Name: Conner Homrighaus
 // Creating a n = whatever from an n <= 1024 nBody GPU code. 
 // nvcc HW19.cu -o temp -lglut -lm -lGLU -lGL
 
