@@ -1,4 +1,4 @@
-// Name:
+// Name: Conner Homrighaus
 // Vector addition on two GPUs.
 // nvcc HW22.cu -o temp
 /*
