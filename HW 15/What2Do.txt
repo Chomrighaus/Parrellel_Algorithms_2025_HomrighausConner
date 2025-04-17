@@ -1,0 +1,2 @@
+ What to do:
+ Read chapter 10 in your book and remove all the ??? in the code to see how to setup streams.
