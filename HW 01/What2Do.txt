@@ -1,0 +1,8 @@
+ What to do:
+ 1. Understand every line of code and be able to explain it in class.
+I understand that this code is a vector adder that adds via array addition. I played with the pointers a bit in my 
+visual studio, but I did not commit those changes in order to perserve the original code!
+I did make a few of my own comments on things that I went through and double checked I understood! For example, what tv_sec did!
+ 2. Compile, run, and play around with the code.
+I did play around with the code, just on the local machine. However, I am going to go ahead and run the command
+git pull in order to merge this update with the cloned repository on my machine!
