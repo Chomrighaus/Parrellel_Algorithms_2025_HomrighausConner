@@ -1,0 +1,6 @@
+ What to do:
+ This code uses the CPU to compute the dot product of two vectors of length N. 
+ It includes a skeleton for setting up a GPU dot product, but that part is currently empty.
+ Additionally, the CPU code is somewhat convoluted, but it is structured this way to parallel 
+ the GPU code you will need to write. The program will also verify whether you have correctly 
+ implemented the dot product on the GPU.
