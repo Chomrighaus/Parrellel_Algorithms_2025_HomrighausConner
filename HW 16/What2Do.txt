@@ -1,0 +1,6 @@
+ What to do:
+ Read chapter 10 in your book.
+ This code sets up most of the code that you will need to create two streams but finish the process
+ by removing the ???s.
+ Once you get the two streams working overlap them in a smart way that will speedup your code like the
+ way they did it in your book.
