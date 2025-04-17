@@ -1,0 +1,10 @@
+ What to do:
+ This is the solution to HW2. It works well for adding vectors using a single block.
+ But why use just one block?
+ We have thousands of CUDA cores, so we should use many blocks to keep the SMs (Streaming Multiprocessors) on the GPU busy.
+
+ Extend this code so that, given a block size, it will set the grid size to handle "almost" any vector addition.
+ I say "almost" because there is a limit to how many blocks you can use, but this number is very large. 
+ We will address this limitation in the next HW.
+
+ Hard-code the block size to be 256.
