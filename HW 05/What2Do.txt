@@ -1,0 +1,6 @@
+ What to do:
+ This code prints out useful information about the GPU(s) in your machine, 
+ but there is much more data available in the cudaDeviceProp structure.
+
+ Extend this code so that it prints out all the information about the GPU(s) in your system. 
+ Also, and this is the fun part, be prepared to explain what each piece of information means. 
