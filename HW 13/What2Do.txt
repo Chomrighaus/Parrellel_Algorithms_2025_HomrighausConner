@@ -1,0 +1,4 @@
+ What to do:
+ This code generates a series of random numbers and places them into bins based on size ranges using the CPU. 
+ Create a binning scheme that utilizes the GPU and takes advantage of both global and shared atomics. 
+ The function call has already been created. Additionally, make the block size twice the number of multiprocessors.
