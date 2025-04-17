@@ -1,0 +1,5 @@
+ What to do:
+ This code creates a random set of spheres and uses ray tracing to create a picture of them to be 
+ displayed on the screen. Go through the code and understand it. Then:
+ 1: The spheres you created on the CPU do not change so send them up to the GPU and put them into constant memory.
+ 2: Use CUDA events to time you code.
