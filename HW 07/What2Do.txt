@@ -1,0 +1,6 @@
+ What to do:
+ This code displays a simple Julia set fractal using the GPU.
+ But it only runs on a window of 1024X1024.
+ Extend it so that it can run on any given window size.
+ Also, color it to your liking. I will judge you on your artisct flare. 
+ Don't cute off your ear or anything but make Vincent wish he had, had a GPU.
