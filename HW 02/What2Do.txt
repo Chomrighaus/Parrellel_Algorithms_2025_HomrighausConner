@@ -1,0 +1,52 @@
+What to do:
+ This code adds the vectors on the GPU.
+ Man, that was easy!
+
+ 1. First, just add cuda to the word malloc to get cudaMalloc and use it to allocate memory on the GPU.
+ Okay, you had to use an & instead of float*, but come on, that was no big deal.
+
+ 2. Use cudaMemcpyAsync to copy your CPU memory holding your vectors to the GPU.
+
+ 3. Now for the important stuff we've all been waiting for: the GPU "CUDA kernel" that does 
+ the work on thousands of CUDA cores all at the same time!!!!!!!! 
+ Wait, all you have to do is remove the for loop?
+ Dude, that was too simple! I want my money back! 
+ Be patient, it gets a little harder, but remember, I told you CUDA was simple.
+ 
+ 4. call cudaDeviceSynchronize. SYnc up the CPU and the GPU. I'll expaned on this in to story at the end of 5 below.
+ 
+ 5. Use cudaMemcpyAsync again to copy your GPU memory back to the CPU.
+ Be careful with cudaMemcpyAsync. Make sure you pay attention to the last argument you pass in the call.
+ Also, note that it says "Async" at the end. That means the CPU tells the GPU to do the copy but doesn't wait around for it to finish.
+
+ CPU: "Dude, do your copy and don't bother me. It's 'Async'—I’ve got to get back to watching this cool 
+ TikTok video of a guy smashing watermelons with his face."
+ 
+ GPU: "Whatever, dude. I'll do your copy when I get around to it. It's 'Async'."
+ 
+ CPU: "Just make sure you get it done before I check your work."
+ 
+ GPU: "Well, maybe you'd better check with me to see if I'm done before you start checking. That means use cudaDeviceSynchronize!"
+ 
+ CPU: "Da."
+ 
+ GPU: "I might be all tied up watching a TikTok video of a guy eating hotdogs with his hands tied behind his back... underwater."
+ 
+ GPU thought to self: "It must be nice being a CPU, living in the administration zone where time and logic don't apply. 
+ Sitting in meetings all day coming up with work for us to do!"
+
+ 6. Use cudaFree instead of free.
+ 
+ What you need to do:
+
+ The code below runs for a vector of length 500.
+ Modify it so that it runs for a vector of length 1000 and check your result.
+ Then, set the vector size to 1500 and check your result again. 
+ This is the code you will turn in.
+ 
+ Remember, you can only use one block!!!
+ Don’t cry. I know you played with a basket full of blocks when you were a kid.
+ I’ll let you play with over 60,000 blocks in the future—you’ll just have to wait.
+
+ Be prepared to explain what you did to make this work and why it works.
+ NOTE: Good code should work for any value of N.
