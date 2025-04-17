@@ -1,0 +1,18 @@
+What to do:
+ This code adds two vectors of any length on a GPU.
+ Rewriting the Code to Run on Two GPUs:
+
+ 1. Check GPU Availability:
+    Ensure that you have at least two GPUs available. If not, report the issue and exit the program.
+
+ 2. Handle Odd-Length Vector:
+    If the vector length is odd, ensure that you select a half N value that does not exclude the last element of the vector.
+
+ 3. Send First Half to GPU 1:
+    Send the first half of the vector to the first GPU, and perform the operation of adding a to b.
+
+ 4. Send Second Half to GPU 2:
+    Send the second half of the vector to the second GPU, and again perform the operation of adding a to b.
+
+ 5. Return Results to the CPU:
+    Once both GPUs have completed their computations, transfer the results back to the CPU and verify that the results are correct.
