@@ -1,0 +1,6 @@
+ What to do:
+ This code is the solution to HW8. It finds the dot product of vectors that are smaller than the block size.
+ Extend this code so that it uses many blocks and many threads and can find the dot product of any vector length.
+ Use shared memory in your blocks to speed up your code.
+ You will have to do the final reduction on the CPU.
+ Set your thread count to 200. Set N to different values to check your code.
