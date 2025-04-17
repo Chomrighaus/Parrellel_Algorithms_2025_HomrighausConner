@@ -1,4 +1,0 @@
- What to do:
- This is some crude code that moves two bodies around in a box, attracted by gravity and 
- repelled when they hit each other. Take this from a two-body problem to an N-body problem, where 
- NUMBER_OF_SPHERES is a #define that you can change. Also clean it up a bit so it is more user-friendly.
