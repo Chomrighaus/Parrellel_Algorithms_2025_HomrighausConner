@@ -1,0 +1,8 @@
+ What to do:
+ This is some lean n-body code that runs on the GPU for any number of bodies (within reason). Take this code and make it 
+ run as fast as possible using any tricks you know or can find. Try to keep the same general format so we can time it and 
+ compare it with others' code. This will be a competition. To focus more on new ideas rather than just using a bunch of if 
+ statements to avoid going out of bounds, N will be a power of 2 and 256 < N < 262,144. CHeck in code to make sure this is true.
+ Note: The code takes two arguments as inputs:
+ 1. The number of bodies to simulate.
+ 2. Whether to draw sub-arrangements of the bodies during the simulation (1), or only the first and last arrangements (0).
