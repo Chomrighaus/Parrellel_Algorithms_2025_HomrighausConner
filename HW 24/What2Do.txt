@@ -1,0 +1,3 @@
+ What to do:
+ This is some robust N-body code with all the bells and whistles removed. 
+ Modify it so it runs on two GPUs.
