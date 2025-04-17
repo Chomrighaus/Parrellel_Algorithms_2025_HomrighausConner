@@ -1,0 +1,30 @@
+ What to do:
+ This is the solution to HW3. It works well for adding vectors with fixed-size blocks. 
+ Given the size of the vector it needs to add, it takes a set block size, determines how 
+ many blocks are needed, and creates a grid large enough to complete the task. Cool, cool!
+ 
+ But—and this is a big but—this can get you into trouble because there is a limited number 
+ of blocks you can use. Though large, it is still finite. Therefore, we need to write the 
+ code in such a way that we don't have to worry about this limit. Additionally, some block 
+ and grid sizes work better than others, which we will explore when we look at the 
+ streaming multiprocessors.
+ 
+ Extend this code so that, given a block size and a grid size, it can handle any vector addition. 
+ Start by hard-coding the block size to 256 and the grid size to 64. Then, experiment with different 
+ block and grid sizes to see if you can achieve any speedup. Set the vector size to a very large value 
+ for time testing.
+
+ You’ve probably already noticed that the GPU doesn’t significantly outperform the CPU. This is because 
+ we’re not asking the GPU to do much work, and the overhead of setting up the GPU eliminates much of the 
+ potential speedup. 
+ 
+ To address this, modify the computation so that:
+ c = sqrt(cos(a)*cos(a) + a*a + sin(a)*sin(a) - 1.0) + sqrt(cos(b)*cos(b) + b*b + sin(b)*sin(b) - 1.0)
+ Hopefully, this is just a convoluted and computationally expensive way to calculate a + b.
+ If the compiler doesn't recognize the simplification and optimize away all the unnecessary work, 
+ this should create enough computational workload for the GPU to outperform the CPU.
+
+ Write the loop as a for loop rather than a while loop. This will allow you to also use #pragma unroll 
+ to explore whether it provides any speedup. Make sure to include an if (id < n) condition in your code 
+ to ensure safety. Finally, be prepared to discuss the impact of #pragma unroll and whether it helped 
+ improve performance.
