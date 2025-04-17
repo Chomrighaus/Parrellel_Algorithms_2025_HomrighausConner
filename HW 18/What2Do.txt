@@ -1,0 +1,6 @@
+ What to do:
+ This is some lean nBody code that runs on the CPU. Rewrite it, keeping the same general format, 
+ but offload the compute-intensive parts of the code to the GPU for acceleration.
+ Note: The code takes two arguments as inputs:
+ 1. The number of bodies to simulate, (We will keep the number of bodies under 1024 for this HW so it can be run on one block.)
+ 2. Whether to draw sub-arrangements of the bodies during the simulation (1), or only the first and last arrangements (0).
