@@ -1,0 +1,7 @@
+ What to do:
+ This is some lean nBody code that runs on the GPU. But the number of bodies it can simulated is limited to 1024
+ so it can run on one block. Extend this code so it can simulation as many bodies as the user wants (within reason).
+ Keep the same general format. But you will need to change a few major things in the code.
+ Note: The code takes two arguments as inputs:
+ 1. the number of bodies to simulate,
+ 2. Whether to draw sub-arrangements of the bodies during the simulation (1), or only the first and last arrangements (0).
