@@ -1,0 +1,5 @@
+ What to do:
+ This is some robust N-body code with all the bells and whistles removed. 
+ It automatically detects the number of available GPUs on the machine and runs using all of them.
+ Rewrite the code using CUDA unified memory to make it simpler and use cudaMemPrefetchAsyn to make
+ the memory movement faster.
