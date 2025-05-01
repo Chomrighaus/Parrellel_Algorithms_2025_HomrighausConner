@@ -1,0 +1,4 @@
+ What to do:
+ This is some code that runs a random walk for 10000 steps.
+ Use cudaRand and run 10 of these runs at once with diferent seeds on the GPU.
+ Print out all 10 final positions.
